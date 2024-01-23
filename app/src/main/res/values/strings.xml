@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">Skullgirls Combo Companion</string>
+    <string name="squigly">Squigly</string>
+    <string name="big_band">Big Band</string>
+    <string name="eliza">Eliza</string>
+    <string name="miss_fortune">Miss Fortune</string>
+    <string name="peacock">Peacock</string>
+    <string name="painwheel">Painwheel</string>
+    <string name="filia">Filia</string>
+    <string name="cerebella">Cerebella</string>
+    <string name="valentine">Valentine</string>
+    <string name="parasoul">Parasoul</string>
+    <string name="dbl">Double</string>
+    <string name="fukua">Fukua</string>
+    <string name="beowulf">Beowulf</string>
+    <string name="robo_fortune">Robo Fortune</string>
+    <string name="umbrella">Umbrella</string>
+    <string name="annie">Annie</string>
+    <string name="black_dahlia">Black Dahlia</string>
+</resources>
