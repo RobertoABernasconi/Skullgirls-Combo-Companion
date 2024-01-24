@@ -11,6 +11,7 @@ class MainActivity : ComponentActivity() {
         super.onCreate(savedInstanceState)
 
         val listener = View.OnClickListener { view ->
+
             var intent = Intent(this@MainActivity, ComboActivity::class.java)
             intent.putExtra("character", view.contentDescription)
             startActivity(intent)

@@ -9,7 +9,7 @@ class ComboActivity : ComponentActivity() {
         super.onCreate(savedInstanceState)
         val character: String? = intent.getStringExtra("character")
 
-        setContentView(R.layout.combo_view)
+        setContentView(R.layout.activity_combo_view)
         Toast.makeText(this, character, Toast.LENGTH_SHORT).show()
     }
 }

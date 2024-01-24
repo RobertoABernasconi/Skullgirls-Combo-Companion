@@ -37,7 +37,11 @@ private val LightColorScheme = lightColorScheme(
     */
 )
 
+/*
 @Composable
+ */
+
+/*
 fun SkullgirlsComboCompanionTheme(
     darkTheme: Boolean = isSystemInDarkTheme(),
     // Dynamic color is available on Android 12+
@@ -68,3 +72,4 @@ fun SkullgirlsComboCompanionTheme(
         content = content
     )
 }
+*/
