@@ -5,8 +5,9 @@ import android.os.Bundle
 import android.view.View
 import android.widget.ImageButton
 import androidx.activity.ComponentActivity
-import com.google.firebase.firestore.ktx.firestore
-import com.google.firebase.ktx.Firebase
+import com.google.firebase.Firebase
+import com.google.firebase.firestore.CollectionReference
+import com.google.firebase.firestore.firestore
 
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -15,14 +16,12 @@ class MainActivity : ComponentActivity() {
         val listener = View.OnClickListener { view ->
 
             var intent = Intent(this@MainActivity, ComboActivity::class.java)
-            intent.putExtra("character", view.contentDescription)
+            intent.putExtra("character", view.contentDescription) //identifies the character to fetch
+
             startActivity(intent)
         }
 
         setContentView(R.layout.activity_main)
-
-        val db = Firebase.firestore
-
 
         //setting the OnClickListener for each imageButton
         val imageButton1 = findViewById<ImageButton>(R.id.imageButton1)
@@ -60,5 +59,4 @@ class MainActivity : ComponentActivity() {
         val imageButton17 = findViewById<ImageButton>(R.id.imageButton17)
         imageButton17.setOnClickListener(listener)
     }
-
 }
