@@ -5,6 +5,8 @@ import android.os.Bundle
 import android.view.View
 import android.widget.ImageButton
 import androidx.activity.ComponentActivity
+import com.google.firebase.firestore.ktx.firestore
+import com.google.firebase.ktx.Firebase
 
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -19,6 +21,10 @@ class MainActivity : ComponentActivity() {
 
         setContentView(R.layout.activity_main)
 
+        val db = Firebase.firestore
+
+
+        //setting the OnClickListener for each imageButton
         val imageButton1 = findViewById<ImageButton>(R.id.imageButton1)
         imageButton1.setOnClickListener(listener)
         val imageButton2 = findViewById<ImageButton>(R.id.imageButton2)

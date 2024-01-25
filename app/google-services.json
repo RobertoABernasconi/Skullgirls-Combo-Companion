@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "223634156502",
+    "project_id": "skullgirls-combo-companion",
+    "storage_bucket": "skullgirls-combo-companion.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:223634156502:android:d509d60e7bd79f66855277",
+        "android_client_info": {
+          "package_name": "com.example.skullgirlscombocompanion"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAAu0beXLbTz2990DRJRTGtPjLhFV41U_g"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
