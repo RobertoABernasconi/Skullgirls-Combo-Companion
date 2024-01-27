@@ -61,6 +61,8 @@ object DBManager {
 
     fun addCombo(character: String, combo: ComboModel) {
         map[character]!!.add(combo)
+
+        combos.document().set(hashMapOf("character" to character, "damage" to combo.damage.toString(), "input" to combo.input))
     }
 
     fun listOfCombos(character: String): ArrayList<ComboModel>? {

@@ -10,7 +10,6 @@
         android:label="@string/app_name"
         android:roundIcon="@drawable/centrepiece"
         android:supportsRtl="true"
-        android:theme="@style/Theme.SkullgirlsComboCompanion"
         tools:targetApi="31">
         <activity
             android:name=".MainActivity"
