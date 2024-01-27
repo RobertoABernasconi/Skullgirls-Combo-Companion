@@ -16,7 +16,7 @@ class ComboListAdapter(private val list: ArrayList<ComboModel>) : RecyclerView.A
 
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
         val comboModel = list[position]
-        holder.notationTextView.text = comboModel.notation
+        holder.notationTextView.text = comboModel.input
         holder.damageTextView.text = ("Damage:\n" + comboModel.damage.toString())
 
     }

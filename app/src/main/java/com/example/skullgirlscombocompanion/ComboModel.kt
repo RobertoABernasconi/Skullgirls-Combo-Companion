@@ -1,3 +1,3 @@
 package com.example.skullgirlscombocompanion
 
-class ComboModel(val notation: String, val damage: Int)
+class ComboModel(val character: String?, val damage: Int, val input: String)

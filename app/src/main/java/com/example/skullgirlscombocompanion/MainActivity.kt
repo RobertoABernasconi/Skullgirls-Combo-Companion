@@ -5,13 +5,11 @@ import android.os.Bundle
 import android.view.View
 import android.widget.ImageButton
 import androidx.activity.ComponentActivity
-import com.google.firebase.Firebase
-import com.google.firebase.firestore.CollectionReference
-import com.google.firebase.firestore.firestore
-
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+
+        DBManager.setup()
 
         val listener = View.OnClickListener { view ->
 
@@ -60,3 +58,4 @@ class MainActivity : ComponentActivity() {
         imageButton17.setOnClickListener(listener)
     }
 }
+
