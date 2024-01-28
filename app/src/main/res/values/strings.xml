@@ -18,8 +18,8 @@
     <string name="annie">Annie</string>
     <string name="black_dahlia">Black Dahlia</string>
     <string name="insert_combo_notation_here">Insert combo notation here</string>
-    <string name="order_by_damage">Order by: Ascending damage</string>
-    <string name="order_by_starter">Order by: Descending damage</string>
+    <string name="order_by_damage">Order by: Damage</string>
+    <string name="order_by_starter">Order by: Starter</string>
     <string name="insert_damage_here">Insert damage here</string>
     <string name="add_combo_to_database">Add Combo to database</string>
 </resources>

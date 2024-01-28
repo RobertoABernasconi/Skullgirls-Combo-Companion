@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -29,24 +28,22 @@
             android:weightSum="4">
 
             <Button
-                android:id="@+id/ascending_damage_sort_button"
-                style="?android:attr/buttonBarButtonStyle"
+                android:id="@+id/damage_sort_button"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_weight="2"
-                android:background="@android:color/darker_gray"
                 android:text="@string/order_by_damage"
-                android:textColor="@color/black" />
+                android:textColor="@color/black"
+                tools:ignore="ButtonStyle" />
 
             <Button
-                android:id="@+id/descending_damage_sort_button"
-                style="?android:attr/buttonBarButtonStyle"
+                android:id="@+id/starter_sort_button"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_weight="2"
-                android:background="@android:color/darker_gray"
                 android:text="@string/order_by_starter"
-                android:textColor="@color/black" />
+                android:textColor="@color/black"
+                tools:ignore="ButtonStyle" />
         </LinearLayout>
 
         <EditText
@@ -54,8 +51,12 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_weight="3"
-            android:text="@string/insert_combo_notation_here"
-            android:textColor="@android:color/holo_orange_light" />
+            android:hint="@string/insert_combo_notation_here"
+            android:importantForAutofill="no"
+            android:inputType="textMultiLine"
+            android:textColor="@android:color/holo_orange_light"
+            android:textColorHint="@android:color/holo_orange_light"
+            tools:ignore="LabelFor" />
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -68,16 +69,18 @@
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:text="@string/insert_damage_here"
-                android:textColor="@android:color/holo_orange_light" />
+                android:hint="@string/insert_damage_here"
+                android:importantForAutofill="no"
+                android:textColor="@android:color/holo_orange_light"
+                android:textColorHint="@android:color/holo_orange_light"
+                tools:ignore="LabelFor"
+                android:inputType="numberDecimal" />
 
             <Button
                 android:id="@+id/add_combo_to_database_button"
-                style="?android:attr/buttonBarButtonStyle"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:background="@android:color/darker_gray"
                 android:text="@string/add_combo_to_database"
                 android:textColor="@color/black" />
         </LinearLayout>

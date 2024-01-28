@@ -69,31 +69,10 @@ object DBManager {
         return map[character]
     }
 
-    //simple insertion sort as there should be few elements
-    fun insertionSortDamage(character: String, mode: String) {
-        var tempArray: ArrayList<ComboModel> = map[character]!!
-        val n = tempArray.size
-
-        for (i in 1 until n) {
-            val key = tempArray[i]
-            val keyDamage = key.damage
-            var j = i - 1
-            while ((j >= 0) && (tempArray[j].damage > keyDamage)) {
-                tempArray[j + 1] = tempArray[j]
-                j--
-            }
-            tempArray[j + 1] = key
-        }
-
-        //invert order if descending
-        if (mode == "Desc") {
-            for (i in 0 until n / 2) {
-                val temp = tempArray[i]
-                tempArray[i] = tempArray[n - i]
-                tempArray[n - i] = temp
-            }
-        }
-
-        map[character] = tempArray
+    fun sortByDamage(character: String, mode: String) {
+        map[character]!!.sortWith(ComboModel.sortByDamage(mode))
+    }
+    fun sortByStarter(character: String, mode: String) {
+        map[character]!!.sortWith(ComboModel.sortByStarter(mode))
     }
 }
